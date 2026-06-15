@@ -97,7 +97,7 @@ bash scripts/build_android_wsl.sh
 The debug APK is usually created under:
 
 ```text
-bin/spoyt-0.1.0-arm64-v8a_armeabi-v7a-debug.apk
+bin/spoyt-0.1.0-arm64-v8a-debug.apk
 ```
 
 ## Install And Test
