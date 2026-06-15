@@ -34,10 +34,27 @@ jobs:
       - name: Build APK
         run: |
           . .buildozer-venv/bin/activate
-          yes | buildozer -v android debug
+          set +e
+          yes | buildozer -v android debug 2>&1 | tee buildozer-debug.log
+          status=${PIPESTATUS[1]}
+          if [ "$status" -ne 0 ]; then
+            echo ""
+            echo "===== Buildozer failed. Last 400 log lines ====="
+            tail -n 400 buildozer-debug.log
+            echo "===== End Buildozer tail ====="
+          fi
+          exit "$status"
 
       - name: Upload APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: spoyt-debug-apk
           path: bin/*.apk
+
+      - name: Upload Buildozer log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: buildozer-debug-log
+          path: buildozer-debug.log
