@@ -120,6 +120,7 @@ Manual smoke test:
 
 ## Known Android Risks
 
+- Android min API is set to 24 because the current python-for-android Python 3.14 recipe uses APIs such as `preadv`/`pwritev` while compiling CPython.
 - `yt-dlp` is pure Python, but python-for-android does not guarantee a first-party recipe for every release. Keep `yt-dlp` current and expect to troubleshoot extractor dependencies.
 - Remote stream playback through Kivy's `SoundLoader` can vary by Android device and audio provider. Offline downloaded m4a playback is the more reliable path.
 - NewPipeExtractor is not currently used by this codebase. If a Java NewPipeExtractor integration is added later, package it through Gradle/JAR and call it through `pyjnius`; this is more brittle than the current `yt-dlp` path.

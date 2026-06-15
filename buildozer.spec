@@ -16,7 +16,7 @@ requirements = python3,kivy,ytmusicapi,yt-dlp,certifi,ffmpeg
 
 android.permissions = INTERNET,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE,READ_MEDIA_AUDIO
 android.api = 35
-android.minapi = 23
+android.minapi = 24
 android.ndk = 25b
 android.accept_sdk_license = True
 android.archs = arm64-v8a
