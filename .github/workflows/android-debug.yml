@@ -1,0 +1,43 @@
+name: Android Debug APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            autoconf automake build-essential ccache cmake gettext git \
+            libffi-dev libltdl-dev libssl-dev libtool openjdk-17-jdk \
+            patch pkg-config python3-pip python3-setuptools python3-venv \
+            unzip zip zlib1g-dev
+
+      - name: Set up Python
+        run: |
+          python3 -m venv .buildozer-venv
+          . .buildozer-venv/bin/activate
+          python -m pip install --upgrade pip wheel
+          python -m pip install "Cython<3.0" buildozer
+
+      - name: Build APK
+        run: |
+          . .buildozer-venv/bin/activate
+          buildozer -v android debug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: spoyt-debug-apk
+          path: bin/*.apk

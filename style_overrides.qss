@@ -1,0 +1,77 @@
+/* Final layout fixes loaded after style.qss. */
+
+#PlayerBar {
+    background-color: #0B0B0B;
+    border-top: 1px solid #242424;
+}
+
+#NowPlayingPanel,
+#PlayerCenterPanel,
+#VolumePanel {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#NowPlayingPanel {
+    padding: 4px 0;
+}
+
+#PlayerCenterPanel {
+    padding: 0 4px;
+}
+
+#VolumePanel {
+    padding: 0;
+}
+
+#ControlButton {
+    background-color: #242424;
+    border: 1px solid #3C3C3C;
+    border-radius: 20px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#ControlButton:hover {
+    background-color: #333333;
+    border-color: #565656;
+}
+
+#PlayButtonMain {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+#PlayButtonMain:hover {
+    background-color: #1ED760;
+}
+
+#QuickCardButton {
+    background-color: #181818;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    min-height: 78px;
+    max-height: 78px;
+    padding: 0 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 850;
+    text-align: left;
+}
+
+#QuickCardButton:hover {
+    background-color: #242424;
+    border-color: #4C4C4C;
+}
+
+QLabel {
+    background-color: transparent;
+}

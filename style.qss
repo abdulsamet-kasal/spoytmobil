@@ -1,0 +1,1832 @@
+/* ============================================================
+   Spoyt - Koyu Tema (QSS)
+   ============================================================ */
+
+* {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+QLabel {
+    background-color: transparent;
+}
+
+/* ------------------------------------------------------------
+   Player bar and home card correction
+   ------------------------------------------------------------ */
+#PlayerBar {
+    background-color: #0B0B0B;
+    border-top: 1px solid #242424;
+}
+
+#NowPlayingPanel,
+#PlayerCenterPanel,
+#VolumePanel {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#NowPlayingPanel {
+    padding: 4px 0;
+}
+
+#PlayerCenterPanel {
+    padding: 0 4px;
+}
+
+#VolumePanel {
+    padding: 0;
+}
+
+#ControlButton {
+    background-color: #242424;
+    border: 1px solid #3C3C3C;
+    border-radius: 20px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#PlayButtonMain {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+#QuickCardButton {
+    background-color: #181818;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    min-height: 78px;
+    max-height: 78px;
+    padding: 14px 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 850;
+    text-align: left;
+}
+
+#QuickCardButton:hover {
+    background-color: #242424;
+    border-color: #4C4C4C;
+}
+
+QLabel {
+    background-color: transparent;
+}
+
+/* ------------------------------------------------------------
+   Responsive proportion pass
+   ------------------------------------------------------------ */
+QMainWindow,
+QWidget {
+    background-color: #101010;
+}
+
+#ContentStack,
+#HomeView,
+#SearchView,
+#LibraryView {
+    background-color: #101010;
+}
+
+#Sidebar {
+    background-color: #070707;
+    border-right: 1px solid #1A1A1A;
+}
+
+#NavButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    min-height: 44px;
+    padding: 0 18px;
+    color: #DADADA;
+    font-size: 14px;
+    font-weight: 750;
+    text-align: left;
+}
+
+#NavButton:hover {
+    background-color: #181818;
+    border-color: #292929;
+    color: #FFFFFF;
+}
+
+#NavButton:checked {
+    background-color: #252525;
+    border-color: #3A3A3A;
+    color: #FFFFFF;
+}
+
+#SearchBarFrame {
+    background-color: #1B1B1B;
+    border: 1px solid #333333;
+    border-radius: 28px;
+    min-height: 56px;
+    max-height: 56px;
+}
+
+QWidget#SearchBarFrame QLineEdit#SearchInput {
+    background-color: transparent;
+    border: none;
+    border-radius: 22px;
+    min-height: 44px;
+    max-height: 44px;
+    padding: 0 18px;
+    color: #FFFFFF;
+    font-size: 14px;
+    selection-background-color: #1ED760;
+    selection-color: #050505;
+}
+
+QWidget#SearchBarFrame QLineEdit#SearchInput:focus {
+    border: none;
+}
+
+#PrimaryPillButton,
+#SearchButton,
+#SecondaryButton,
+#DangerButton {
+    border-radius: 23px;
+    min-height: 46px;
+    max-height: 46px;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 850;
+    text-align: center;
+}
+
+#PrimaryPillButton,
+#SearchButton {
+    background-color: #1ED760;
+    border: 1px solid #1ED760;
+    color: #050505;
+}
+
+#PrimaryPillButton:hover,
+#SearchButton:hover {
+    background-color: #34E073;
+    border-color: #34E073;
+}
+
+QWidget#SearchBarFrame QPushButton#SearchButton {
+    min-width: 112px;
+    max-width: 112px;
+    min-height: 44px;
+    max-height: 44px;
+    border-radius: 22px;
+}
+
+#SecondaryButton {
+    background-color: #191919;
+    border: 1px solid #383838;
+    color: #FFFFFF;
+}
+
+#SecondaryButton:hover {
+    background-color: #242424;
+    border-color: #1ED760;
+}
+
+#DangerButton {
+    background-color: #1C1111;
+    border: 1px solid #743131;
+    color: #FFC4C4;
+}
+
+#DangerButton:hover {
+    background-color: #351A1A;
+}
+
+#LibraryCardButton {
+    background-color: #181818;
+    border: 1px solid #303030;
+    border-radius: 24px;
+    min-height: 108px;
+    padding: 22px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 850;
+    text-align: left;
+}
+
+#LibraryCardButton:hover {
+    background-color: #242424;
+    border-color: #4C4C4C;
+}
+
+#TrackRow {
+    background-color: #151515;
+    border: 1px solid #292929;
+    border-radius: 24px;
+    min-height: 86px;
+}
+
+#TrackRow:hover {
+    background-color: #222222;
+    border-color: #424242;
+}
+
+#Thumbnail {
+    background-color: #282828;
+    border-radius: 16px;
+}
+
+#PlayRowButton,
+#MoreRowButton {
+    background-color: #242424;
+    border: 1px solid #3B3B3B;
+    border-radius: 21px;
+    min-width: 42px;
+    max-width: 42px;
+    min-height: 42px;
+    max-height: 42px;
+}
+
+#PlayRowButton:hover {
+    background-color: #1ED760;
+    border-color: #1ED760;
+    color: #050505;
+}
+
+#MoreRowButton:hover {
+    background-color: #333333;
+    border-color: #565656;
+}
+
+#PlayerBar {
+    background-color: #080808;
+    border-top: 1px solid #202020;
+}
+
+#NowPlayingPanel,
+#PlayerCenterPanel,
+#VolumePanel {
+    background-color: #151515;
+    border: 1px solid #303030;
+    border-radius: 26px;
+}
+
+#ControlButton {
+    background-color: #242424;
+    border: 1px solid #3E3E3E;
+    border-radius: 22px;
+    min-width: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    max-height: 44px;
+}
+
+#ControlButton:hover {
+    background-color: #343434;
+    border-color: #5A5A5A;
+}
+
+#PlayButtonMain {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 27px;
+    min-width: 54px;
+    max-width: 54px;
+    min-height: 54px;
+    max-height: 54px;
+}
+
+#PlayButtonMain:hover {
+    background-color: #1ED760;
+}
+
+#DialogSurface {
+    background-color: #181818;
+    border: 1px solid #343434;
+    border-radius: 26px;
+}
+
+#DialogInput,
+#DialogCombo {
+    border-radius: 20px;
+    min-height: 42px;
+}
+
+#DialogCloseButton,
+#DialogPrimaryButton,
+#DialogGhostButton,
+#DialogDangerButton {
+    border-radius: 22px;
+    min-height: 42px;
+}
+
+QScrollBar:vertical {
+    background: #101010;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #444444;
+    border-radius: 5px;
+    min-height: 28px;
+}
+
+QLabel {
+    background-color: transparent;
+}
+
+/* ------------------------------------------------------------
+   Final player bar and home card correction
+   ------------------------------------------------------------ */
+#PlayerBar {
+    background-color: #0B0B0B;
+    border-top: 1px solid #242424;
+}
+
+#NowPlayingPanel,
+#PlayerCenterPanel,
+#VolumePanel {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#NowPlayingPanel {
+    padding: 4px 0;
+}
+
+#PlayerCenterPanel {
+    padding: 0 4px;
+}
+
+#VolumePanel {
+    padding: 0;
+}
+
+#ControlButton {
+    background-color: #242424;
+    border: 1px solid #3C3C3C;
+    border-radius: 20px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#PlayButtonMain {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+#QuickCardButton {
+    background-color: #181818;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    min-height: 78px;
+    max-height: 78px;
+    padding: 14px 20px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 850;
+    text-align: left;
+}
+
+#QuickCardButton:hover {
+    background-color: #242424;
+    border-color: #4C4C4C;
+}
+
+QLabel {
+    background-color: transparent;
+}
+
+/* ------------------------------------------------------------
+   Final soft-shape overrides
+   ------------------------------------------------------------ */
+QWidget {
+    background-color: #101010;
+}
+
+#ContentStack,
+#HomeView,
+#SearchView,
+#LibraryView {
+    background-color: #101010;
+}
+
+#Sidebar {
+    background-color: #070707;
+    border-right: 1px solid #171717;
+}
+
+#NavButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 14px 18px;
+    min-height: 30px;
+    color: #D7D7D7;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+#NavButton:hover {
+    background-color: #181818;
+    border-color: #2C2C2C;
+}
+
+#NavButton:checked {
+    background-color: #262626;
+    border-color: #3A3A3A;
+    color: #FFFFFF;
+}
+
+#SecondaryButton,
+#DangerButton,
+#SearchButton,
+#PrimaryPillButton {
+    border-radius: 23px;
+    min-height: 46px;
+    padding: 0 22px;
+    font-weight: 850;
+}
+
+#SearchButton,
+#PrimaryPillButton {
+    background-color: #1ED760;
+    border: 1px solid #1ED760;
+    color: #020202;
+}
+
+#SearchButton:hover,
+#PrimaryPillButton:hover {
+    background-color: #3BE477;
+    border-color: #3BE477;
+}
+
+#SecondaryButton {
+    background-color: #171717;
+    border: 1px solid #363636;
+    color: #FFFFFF;
+}
+
+#SecondaryButton:hover {
+    background-color: #242424;
+    border-color: #1ED760;
+}
+
+#DangerButton {
+    background-color: #1A1010;
+    border: 1px solid #713131;
+    color: #FFB8B8;
+}
+
+#DangerButton:hover {
+    background-color: #321919;
+}
+
+#SearchInput {
+    background-color: #202020;
+    border: 1px solid #1ED760;
+    border-radius: 25px;
+    min-height: 50px;
+    padding: 0 20px;
+}
+
+#LibraryCardButton {
+    background-color: #181818;
+    border: 1px solid #303030;
+    border-radius: 28px;
+    padding: 24px;
+    min-height: 108px;
+    font-size: 14px;
+    font-weight: 850;
+}
+
+#LibraryCardButton:hover {
+    background-color: #242424;
+    border-color: #505050;
+}
+
+#TrackRow {
+    background-color: #141414;
+    border: 1px solid #282828;
+    border-radius: 26px;
+    min-height: 86px;
+}
+
+#TrackRow:hover {
+    background-color: #222222;
+    border-color: #404040;
+}
+
+#Thumbnail {
+    border-radius: 16px;
+}
+
+#PlayRowButton,
+#MoreRowButton {
+    background-color: #252525;
+    border: 1px solid #3A3A3A;
+    border-radius: 21px;
+}
+
+#PlayRowButton:hover {
+    background-color: #1ED760;
+    border-color: #1ED760;
+}
+
+#MoreRowButton:hover {
+    background-color: #333333;
+    border-color: #555555;
+}
+
+#PlayerBar {
+    background-color: #080808;
+    border-top: 1px solid #202020;
+}
+
+#NowPlayingPanel,
+#PlayerCenterPanel,
+#VolumePanel {
+    background-color: #151515;
+    border: 1px solid #2E2E2E;
+    border-radius: 28px;
+}
+
+#ControlButton {
+    background-color: #242424;
+    border: 1px solid #3D3D3D;
+    border-radius: 22px;
+    min-width: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    max-height: 44px;
+}
+
+#ControlButton:hover {
+    background-color: #343434;
+    border-color: #5A5A5A;
+}
+
+#PlayButtonMain {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 28px;
+    min-width: 56px;
+    max-width: 56px;
+    min-height: 56px;
+    max-height: 56px;
+}
+
+#PlayButtonMain:hover {
+    background-color: #1ED760;
+}
+
+#DialogSurface {
+    border-radius: 26px;
+}
+
+QScrollBar:vertical {
+    background: #101010;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3F3F3F;
+    border-radius: 5px;
+}
+
+QLabel {
+    background-color: transparent;
+}
+
+/* ------------------------------------------------------------
+   Round premium pass
+   ------------------------------------------------------------ */
+#Sidebar {
+    background-color: #070707;
+    border-right: 1px solid #171717;
+}
+
+#LogoMark {
+    background-color: transparent;
+}
+
+#Logo {
+    font-size: 24px;
+    font-weight: 900;
+    padding: 0;
+}
+
+#NavButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    padding: 13px 18px;
+    min-height: 28px;
+    color: #D6D6D6;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+#NavButton:hover {
+    background-color: #181818;
+    border-color: #262626;
+    color: #FFFFFF;
+}
+
+#NavButton:checked {
+    background-color: #242424;
+    border-color: #363636;
+    color: #FFFFFF;
+}
+
+#SecondaryButton {
+    background-color: #151515;
+    border: 1px solid #303030;
+    border-radius: 18px;
+    padding: 12px 18px;
+}
+
+#SecondaryButton:hover {
+    background-color: #202020;
+    border-color: #1ED760;
+    color: #FFFFFF;
+}
+
+#PlaylistList::item {
+    padding: 10px 14px;
+    border-radius: 16px;
+}
+
+#PlaylistList::item:hover,
+#PlaylistList::item:selected {
+    background-color: #1D1D1D;
+}
+
+#LibraryCardButton {
+    background-color: #171717;
+    border: 1px solid #2B2B2B;
+    border-radius: 18px;
+    padding: 20px;
+    min-height: 78px;
+}
+
+#LibraryCardButton:hover {
+    background-color: #222222;
+    border-color: #4A4A4A;
+}
+
+#TrackRow {
+    background-color: #141414;
+    border: 1px solid #242424;
+    border-radius: 22px;
+    min-height: 82px;
+}
+
+#TrackRow:hover {
+    background-color: #202020;
+    border-color: #3A3A3A;
+}
+
+#Thumbnail {
+    border-radius: 14px;
+}
+
+#PlayRowButton,
+#MoreRowButton {
+    border-radius: 21px;
+}
+
+#PlayerBar {
+    background-color: #080808;
+    border-top: 1px solid #1F1F1F;
+}
+
+#NowPlayingPanel,
+#PlayerCenterPanel,
+#VolumePanel {
+    background-color: #151515;
+    border: 1px solid #2B2B2B;
+    border-radius: 24px;
+}
+
+#NowPlayingPanel {
+    padding: 10px;
+}
+
+#PlayerCenterPanel {
+    padding: 8px 14px;
+}
+
+#VolumePanel {
+    padding: 11px 14px;
+}
+
+#ControlButton {
+    background-color: #252525;
+    border: 1px solid #3A3A3A;
+    border-radius: 20px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#ControlButton:hover {
+    background-color: #333333;
+    border-color: #575757;
+}
+
+#PlayButtonMain {
+    border-radius: 26px;
+    min-width: 52px;
+    max-width: 52px;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+#SearchButton,
+#PrimaryPillButton {
+    border-radius: 24px;
+}
+
+#SearchInput,
+#DialogInput,
+#DialogCombo {
+    border-radius: 14px;
+}
+
+#DialogSurface {
+    border-radius: 24px;
+}
+
+#DialogCloseButton,
+#DialogPrimaryButton,
+#DialogGhostButton,
+#DialogDangerButton {
+    border-radius: 22px;
+}
+
+QMainWindow,
+QWidget {
+    background-color: #121212;
+}
+
+/* ------------------------------------------------------------
+   Sidebar
+   ------------------------------------------------------------ */
+#Sidebar {
+    background-color: #000000;
+    border-right: 1px solid #282828;
+}
+
+#Logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 0 12px;
+}
+
+#SectionLabel {
+    color: #B3B3B3;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 16px 12px 4px 12px;
+}
+
+#NavButton {
+    background-color: transparent;
+    border: none;
+    color: #B3B3B3;
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+#NavButton:hover {
+    color: #FFFFFF;
+}
+
+#NavButton:checked {
+    color: #FFFFFF;
+    background-color: #282828;
+    font-weight: bold;
+}
+
+#PlaylistList {
+    background-color: transparent;
+    border: none;
+    color: #B3B3B3;
+    font-size: 13px;
+    outline: none;
+}
+
+#PlaylistList::item {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+#PlaylistList::item:hover {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+#PlaylistList::item:selected {
+    background-color: #282828;
+    color: #FFFFFF;
+}
+
+/* ------------------------------------------------------------
+   Genel başlıklar
+   ------------------------------------------------------------ */
+#PageTitle {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+#SectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#InfoLabel {
+    color: #B3B3B3;
+    font-size: 13px;
+}
+
+/* ------------------------------------------------------------
+   Arama
+   ------------------------------------------------------------ */
+#SearchInput {
+    background-color: #242424;
+    border: 1px solid #2A2A2A;
+    border-radius: 20px;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+#SearchInput:focus {
+    border: 1px solid #1DB954;
+}
+
+#SearchButton {
+    background-color: #1DB954;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#SearchButton:hover {
+    background-color: #1ED760;
+}
+
+#SearchButton:pressed {
+    background-color: #169C46;
+}
+
+#StatusLabel {
+    color: #B3B3B3;
+    font-size: 13px;
+}
+
+/* ------------------------------------------------------------
+   Sonuç / içerik kaydırma alanı
+   ------------------------------------------------------------ */
+#ResultsScroll {
+    border: none;
+    background-color: transparent;
+}
+
+/* ------------------------------------------------------------
+   Şarkı satırı (TrackRow)
+   ------------------------------------------------------------ */
+#TrackRow {
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+#TrackRow:hover {
+    background-color: #1A1A1A;
+}
+
+#TrackIndex {
+    color: #B3B3B3;
+    font-size: 13px;
+}
+
+#Thumbnail {
+    background-color: #282828;
+    border-radius: 4px;
+}
+
+#TrackTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#TrackArtist {
+    font-size: 12px;
+    color: #B3B3B3;
+}
+
+#TrackDuration {
+    color: #B3B3B3;
+    font-size: 12px;
+}
+
+#TrackState {
+    color: #1DB954;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#PlayRowButton {
+    background-color: transparent;
+    border: none;
+    color: #B3B3B3;
+    font-size: 14px;
+}
+
+#PlayRowButton:hover {
+    color: #1DB954;
+}
+
+#MoreRowButton {
+    background-color: transparent;
+    border: none;
+    color: #B3B3B3;
+    font-size: 18px;
+}
+
+#MoreRowButton:hover {
+    color: #FFFFFF;
+}
+
+QMenu {
+    background-color: #282828;
+    border: 1px solid #3E3E3E;
+    padding: 4px;
+}
+
+QMenu::item {
+    color: #FFFFFF;
+    padding: 8px 28px 8px 12px;
+    border-radius: 3px;
+}
+
+QMenu::item:selected {
+    background-color: #3E3E3E;
+}
+
+QMenu::item:disabled {
+    color: #777777;
+}
+
+#SecondaryButton {
+    background-color: transparent;
+    border: 1px solid #3E3E3E;
+    border-radius: 18px;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#SecondaryButton:hover {
+    border-color: #1DB954;
+    color: #1DB954;
+}
+
+#DangerButton {
+    background-color: transparent;
+    border: 1px solid #A64242;
+    border-radius: 18px;
+    color: #FFB4B4;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+#DangerButton:hover {
+    background-color: #3A1717;
+}
+
+#LibraryCardButton {
+    background-color: #181818;
+    border: 1px solid #282828;
+    border-radius: 6px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 16px;
+    min-height: 56px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#LibraryCardButton:hover {
+    background-color: #282828;
+    border-color: #3E3E3E;
+}
+
+/* ------------------------------------------------------------
+   Alt çalma çubuğu (PlayerBar)
+   ------------------------------------------------------------ */
+#PlayerBar {
+    background-color: #181818;
+    border-top: 1px solid #282828;
+}
+
+#NowPlayingTitle {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#NowPlayingArtist {
+    font-size: 12px;
+    color: #B3B3B3;
+}
+
+#ControlButton {
+    background-color: transparent;
+    border: none;
+    color: #B3B3B3;
+    font-size: 18px;
+}
+
+#ControlButton:hover {
+    color: #FFFFFF;
+}
+
+#PlayButtonMain {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 16px;
+    min-width: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    font-size: 14px;
+}
+
+#PlayButtonMain:hover {
+    background-color: #1DB954;
+}
+
+#TimeLabel {
+    color: #B3B3B3;
+    font-size: 11px;
+    min-width: 36px;
+}
+
+/* ------------------------------------------------------------
+   Slider'lar (ses & ilerleme çubuğu)
+   ------------------------------------------------------------ */
+QSlider::groove:horizontal {
+    height: 4px;
+    background: #4D4D4D;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: #FFFFFF;
+    width: 10px;
+    height: 10px;
+    margin: -4px 0;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #1DB954;
+}
+
+QSlider::sub-page:horizontal {
+    background: #1DB954;
+    border-radius: 2px;
+}
+
+#SeekSlider {
+    min-height: 16px;
+}
+
+/* ------------------------------------------------------------
+   Kaydırma çubukları
+   ------------------------------------------------------------ */
+QScrollBar:vertical {
+    background: #121212;
+    width: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #535353;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #1DB954;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* ------------------------------------------------------------
+   Modern polish overrides
+   ------------------------------------------------------------ */
+QMainWindow {
+    background-color: #070707;
+}
+
+#ContentStack {
+    background-color: #121212;
+}
+
+#Sidebar {
+    background-color: #050505;
+    border-right: 1px solid #1F1F1F;
+}
+
+#Logo {
+    font-size: 22px;
+    padding: 2px 12px;
+}
+
+#NavButton {
+    min-height: 24px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#NavButton:hover {
+    background-color: #171717;
+}
+
+#NavButton:checked {
+    background-color: #232323;
+}
+
+#PlaylistList::item {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+#PageTitle {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#SectionTitle {
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+#SearchInput {
+    min-height: 24px;
+    border-radius: 22px;
+    padding: 11px 18px;
+    background-color: #1F1F1F;
+    border: 1px solid #333333;
+}
+
+#SearchButton,
+#PrimaryPillButton {
+    background-color: #1ED760;
+    color: #000000;
+    border: none;
+    border-radius: 22px;
+    padding: 11px 22px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+#SearchButton:hover,
+#PrimaryPillButton:hover {
+    background-color: #3BE477;
+}
+
+#SecondaryButton {
+    background-color: #191919;
+    border: 1px solid #3A3A3A;
+    border-radius: 22px;
+    padding: 11px 18px;
+}
+
+#SecondaryButton:hover {
+    background-color: #242424;
+}
+
+#DangerButton {
+    border-radius: 22px;
+    padding: 11px 18px;
+}
+
+#LibraryCardButton {
+    background-color: #1B1B1B;
+    border: 1px solid #2D2D2D;
+    border-radius: 8px;
+    padding: 18px;
+    min-height: 70px;
+    font-size: 14px;
+}
+
+#LibraryCardButton:hover {
+    background-color: #292929;
+    border-color: #4B4B4B;
+}
+
+#TrackRow {
+    border-radius: 8px;
+    min-height: 60px;
+}
+
+#TrackRow:hover {
+    background-color: #222222;
+}
+
+#PlayRowButton,
+#MoreRowButton,
+#ControlButton {
+    border-radius: 16px;
+}
+
+#PlayRowButton:hover,
+#MoreRowButton:hover {
+    background-color: #2A2A2A;
+}
+
+#PlayerBar {
+    background-color: #111111;
+    border-top: 1px solid #2B2B2B;
+}
+
+#PlayButtonMain {
+    border-radius: 19px;
+    min-width: 38px;
+    max-width: 38px;
+    min-height: 38px;
+    max-height: 38px;
+    font-size: 16px;
+}
+
+QStatusBar {
+    background-color: #111111;
+    color: #B3B3B3;
+    border-top: 1px solid #282828;
+}
+
+/* ------------------------------------------------------------
+   Modernized rows, player, and dialogs
+   ------------------------------------------------------------ */
+#TrackRow {
+    background-color: #171717;
+    border: 1px solid #252525;
+    border-radius: 8px;
+    min-height: 78px;
+}
+
+#TrackRow:hover {
+    background-color: #232323;
+    border-color: #3B3B3B;
+}
+
+#TrackIndex {
+    color: #8C8C8C;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#Thumbnail {
+    background-color: #2B2B2B;
+    border-radius: 7px;
+}
+
+#TrackTitle {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#TrackArtist {
+    font-size: 12px;
+    color: #A7A7A7;
+}
+
+#TrackState {
+    color: #1ED760;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+#TrackDuration {
+    color: #C8C8C8;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#PlayRowButton {
+    background-color: #262626;
+    border: 1px solid #3A3A3A;
+    border-radius: 19px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+#PlayRowButton:hover {
+    background-color: #1ED760;
+    border-color: #1ED760;
+    color: #050505;
+}
+
+#MoreRowButton {
+    background-color: #1E1E1E;
+    border: 1px solid #343434;
+    border-radius: 19px;
+    color: #D7D7D7;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#MoreRowButton:hover {
+    background-color: #303030;
+    border-color: #555555;
+}
+
+#NowPlayingPanel,
+#PlayerCenterPanel,
+#VolumePanel {
+    background-color: #171717;
+    border: 1px solid #292929;
+    border-radius: 8px;
+}
+
+#NowPlayingPanel {
+    padding: 8px;
+}
+
+#PlayerCenterPanel {
+    padding: 4px;
+}
+
+#VolumePanel {
+    padding: 9px 12px;
+}
+
+#NowPlayingTitle {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+#NowPlayingArtist {
+    font-size: 12px;
+    color: #B8B8B8;
+}
+
+#ControlButton {
+    background-color: #242424;
+    border: 1px solid #383838;
+    border-radius: 17px;
+    color: #FFFFFF;
+    min-width: 34px;
+    max-width: 34px;
+    min-height: 34px;
+    max-height: 34px;
+    font-size: 16px;
+}
+
+#ControlButton:hover {
+    background-color: #303030;
+    border-color: #555555;
+}
+
+#PlayButtonMain {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 22px;
+    min-width: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    max-height: 44px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#PlayButtonMain:hover {
+    background-color: #1ED760;
+}
+
+#SeekSlider,
+#VolumeSlider {
+    min-height: 20px;
+}
+
+QSlider::groove:horizontal {
+    height: 5px;
+    background: #545454;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #FFFFFF;
+    width: 13px;
+    height: 13px;
+    margin: -5px 0;
+    border-radius: 7px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #1ED760;
+    border-radius: 3px;
+}
+
+QDialog#ModernDialog {
+    background-color: transparent;
+}
+
+#DialogSurface {
+    background-color: #181818;
+    border: 1px solid #343434;
+    border-radius: 12px;
+}
+
+#DialogTitle {
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 850;
+}
+
+#DialogSubtitle {
+    color: #AFAFAF;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#DialogLabel {
+    color: #EDEDED;
+    font-size: 13px;
+    font-weight: 750;
+}
+
+#DialogInput,
+#DialogCombo {
+    background-color: #101010;
+    border: 1px solid #3A3A3A;
+    border-radius: 8px;
+    min-height: 38px;
+    padding: 8px 12px;
+    color: #FFFFFF;
+    font-size: 14px;
+    selection-background-color: #1ED760;
+    selection-color: #000000;
+}
+
+#DialogInput:focus,
+#DialogCombo:focus {
+    border: 1px solid #1ED760;
+}
+
+#DialogCloseButton {
+    background-color: #242424;
+    border: 1px solid #383838;
+    border-radius: 16px;
+    color: #D6D6D6;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#DialogCloseButton:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+#DialogPrimaryButton,
+#DialogGhostButton,
+#DialogDangerButton {
+    border-radius: 20px;
+    min-width: 104px;
+    min-height: 38px;
+    padding: 8px 18px;
+    font-weight: 850;
+}
+
+#DialogPrimaryButton {
+    background-color: #1ED760;
+    color: #000000;
+    border: none;
+}
+
+#DialogPrimaryButton:hover {
+    background-color: #36E274;
+}
+
+#DialogGhostButton {
+    background-color: #242424;
+    color: #FFFFFF;
+    border: 1px solid #3D3D3D;
+}
+
+#DialogGhostButton:hover {
+    background-color: #303030;
+    border-color: #5A5A5A;
+}
+
+#DialogDangerButton {
+    background-color: #2A1515;
+    color: #FFBABA;
+    border: 1px solid #7A3030;
+}
+
+#DialogDangerButton:hover {
+    background-color: #471F1F;
+}
+
+QComboBox#DialogCombo::drop-down {
+    border: none;
+    width: 28px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #181818;
+    border: 1px solid #3A3A3A;
+    selection-background-color: #2D2D2D;
+    color: #FFFFFF;
+    padding: 6px;
+}
+
+QLabel {
+    background-color: transparent;
+}
+
+/* ------------------------------------------------------------
+   Final responsive proportion override
+   ------------------------------------------------------------ */
+QMainWindow,
+QWidget {
+    background-color: #101010;
+}
+
+#ContentStack,
+#HomeView,
+#SearchView,
+#LibraryView {
+    background-color: #101010;
+}
+
+#NavButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    min-height: 44px;
+    padding: 0 18px;
+    color: #DADADA;
+    font-size: 14px;
+    font-weight: 750;
+    text-align: left;
+}
+
+#NavButton:hover {
+    background-color: #181818;
+    border-color: #292929;
+    color: #FFFFFF;
+}
+
+#NavButton:checked {
+    background-color: #252525;
+    border-color: #3A3A3A;
+    color: #FFFFFF;
+}
+
+#SearchBarFrame {
+    background-color: #1B1B1B;
+    border: 1px solid #333333;
+    border-radius: 28px;
+    min-height: 56px;
+    max-height: 56px;
+}
+
+QWidget#SearchBarFrame QLineEdit#SearchInput {
+    background-color: transparent;
+    border: none;
+    border-radius: 22px;
+    min-height: 44px;
+    max-height: 44px;
+    padding: 0 18px;
+    color: #FFFFFF;
+    font-size: 14px;
+    selection-background-color: #1ED760;
+    selection-color: #050505;
+}
+
+QWidget#SearchBarFrame QLineEdit#SearchInput:focus {
+    border: none;
+}
+
+#PrimaryPillButton,
+#SearchButton,
+#SecondaryButton,
+#DangerButton {
+    border-radius: 23px;
+    min-height: 46px;
+    max-height: 46px;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 850;
+    text-align: center;
+}
+
+#PrimaryPillButton,
+#SearchButton {
+    background-color: #1ED760;
+    border: 1px solid #1ED760;
+    color: #050505;
+}
+
+#PrimaryPillButton:hover,
+#SearchButton:hover {
+    background-color: #34E073;
+    border-color: #34E073;
+}
+
+QWidget#SearchBarFrame QPushButton#SearchButton {
+    min-width: 112px;
+    max-width: 112px;
+    min-height: 44px;
+    max-height: 44px;
+    border-radius: 22px;
+}
+
+#SecondaryButton {
+    background-color: #191919;
+    border: 1px solid #383838;
+    color: #FFFFFF;
+}
+
+#SecondaryButton:hover {
+    background-color: #242424;
+    border-color: #1ED760;
+}
+
+#DangerButton {
+    background-color: #1C1111;
+    border: 1px solid #743131;
+    color: #FFC4C4;
+}
+
+#DangerButton:hover {
+    background-color: #351A1A;
+}
+
+#LibraryCardButton {
+    background-color: #181818;
+    border: 1px solid #303030;
+    border-radius: 24px;
+    min-height: 108px;
+    padding: 22px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 850;
+    text-align: left;
+}
+
+#LibraryCardButton:hover {
+    background-color: #242424;
+    border-color: #4C4C4C;
+}
+
+#TrackRow {
+    background-color: #151515;
+    border: 1px solid #292929;
+    border-radius: 24px;
+    min-height: 86px;
+}
+
+#TrackRow:hover {
+    background-color: #222222;
+    border-color: #424242;
+}
+
+#Thumbnail {
+    background-color: #282828;
+    border-radius: 16px;
+}
+
+#PlayRowButton,
+#MoreRowButton {
+    background-color: #242424;
+    border: 1px solid #3B3B3B;
+    border-radius: 21px;
+    min-width: 42px;
+    max-width: 42px;
+    min-height: 42px;
+    max-height: 42px;
+}
+
+#PlayRowButton:hover {
+    background-color: #1ED760;
+    border-color: #1ED760;
+    color: #050505;
+}
+
+#MoreRowButton:hover {
+    background-color: #333333;
+    border-color: #565656;
+}
+
+#PlayerBar {
+    background-color: #080808;
+    border-top: 1px solid #202020;
+}
+
+#NowPlayingPanel,
+#PlayerCenterPanel,
+#VolumePanel {
+    background-color: #151515;
+    border: 1px solid #303030;
+    border-radius: 26px;
+}
+
+#ControlButton {
+    background-color: #242424;
+    border: 1px solid #3E3E3E;
+    border-radius: 22px;
+    min-width: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    max-height: 44px;
+}
+
+#ControlButton:hover {
+    background-color: #343434;
+    border-color: #5A5A5A;
+}
+
+#PlayButtonMain {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 27px;
+    min-width: 54px;
+    max-width: 54px;
+    min-height: 54px;
+    max-height: 54px;
+}
+
+#PlayButtonMain:hover {
+    background-color: #1ED760;
+}
+
+#DialogSurface {
+    background-color: #181818;
+    border: 1px solid #343434;
+    border-radius: 26px;
+}
+
+#DialogInput,
+#DialogCombo {
+    border-radius: 20px;
+    min-height: 42px;
+}
+
+#DialogCloseButton,
+#DialogPrimaryButton,
+#DialogGhostButton,
+#DialogDangerButton {
+    border-radius: 22px;
+    min-height: 42px;
+}
+
+QScrollBar:vertical {
+    background: #101010;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #444444;
+    border-radius: 5px;
+    min-height: 28px;
+}
+
+QLabel {
+    background-color: transparent;
+}
